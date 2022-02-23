@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://audio/Testtrack.ogg" type="AudioStream" id=1]
+[ext_resource path="res://scripts/StartScreen.gd" type="Script" id=2]
+
+[node name="StartScreen" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 320.0
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOne" type="ColorRect" parent="."]
+margin_left = 70.0
+margin_top = 50.0
+margin_right = 250.0
+margin_bottom = 70.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gameone" type="Button" parent="GameOne"]
+margin_right = 180.0
+margin_bottom = 20.0
+custom_colors/font_color_disabled = Color( 0, 0.905882, 1, 1 )
+custom_colors/font_color = Color( 0.988235, 0.988235, 0.988235, 1 )
+custom_colors/font_color_hover = Color( 1, 0.839216, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.196078, 1, 0, 1 )
+text = "Game One"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="ColorRect" parent="."]
+modulate = Color( 1, 0.54902, 0.929412, 1 )
+margin_left = 70.0
+margin_top = 110.0
+margin_right = 250.0
+margin_bottom = 130.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Quit"]
+margin_right = 180.0
+margin_bottom = 20.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "QUIT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -15.0
+autoplay = true
+
+[connection signal="pressed" from="GameOne/gameone" to="." method="_on_gameone_pressed"]
