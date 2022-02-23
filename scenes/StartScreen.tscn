@@ -45,16 +45,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="Quit"]
-margin_right = 180.0
+[node name="exitButton" type="Button" parent="Quit"]
+margin_right = 179.0
 margin_bottom = 20.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "QUIT"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "Exit Game"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
@@ -62,3 +56,4 @@ volume_db = -15.0
 autoplay = true
 
 [connection signal="pressed" from="GameOne/gameone" to="." method="_on_gameone_pressed"]
+[connection signal="pressed" from="Quit/exitButton" to="." method="_on_exitButton_pressed"]

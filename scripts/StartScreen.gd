@@ -18,3 +18,7 @@ func _ready():
 func _on_gameone_pressed():
 	get_tree().change_scene_to(load('res://scenes/World.tscn'))
 	
+
+
+func _on_exitButton_pressed():
+	get_tree().quit()
