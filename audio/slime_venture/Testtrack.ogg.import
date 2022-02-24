@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Testtrack.ogg-e3d3f2c53426b47cb7a74ba857ef2ead.oggstr"
+
+[deps]
+
+source_file="res://audio/slime_venture/Testtrack.ogg"
+dest_files=[ "res://.import/Testtrack.ogg-e3d3f2c53426b47cb7a74ba857ef2ead.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

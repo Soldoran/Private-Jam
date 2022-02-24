@@ -16,5 +16,5 @@ func _ready():
 
 #	pass
 func _on_gameone_pressed():
-	get_tree().change_scene_to(load('res://scenes/World.tscn'))
+	get_tree().change_scene_to(load('res://scenes/slime_venture/World.tscn'))
 	
